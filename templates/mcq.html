@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQs</title>
+</head>
+<body>
+    <h1>MCQ List</h1>
+    <div>
+        {% for mcq in mcqs %}
+            <div style="margin-bottom: 20px; border: 1px solid #ccc; padding: 10px;">
+                <h2>{{ mcq.question }}</h2>
+                <div>
+                    {{ mcq.content|safe }} <!-- Render rich text content, including images -->
+                </div>
+            </div>
+        {% empty %}
+            <p>No MCQs available.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
