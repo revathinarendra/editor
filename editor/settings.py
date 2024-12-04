@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-)0m#p4hk!%w@#__yn(#zol2q@m0h-@^ue0g^+v!^f!i!^tfl(!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ckeditor-neon.vercel.app','.vercel.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
