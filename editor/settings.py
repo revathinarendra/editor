@@ -47,9 +47,12 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'questions',
+    'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -133,7 +136,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
-
+CORS_ALLOWED_ORIGINS = [
+    "https://wikitubeio-backend-nsq354vwx-revathi-ks-projects.vercel.app",
+    "https://wikitubeio.vercel.app",
+    'http://localhost:3000',
+    'http://127.0.0.1:3000'
+]
 STATIC_URL = '/static/'
 STATIC_ROOT = 'public/static/'
 
