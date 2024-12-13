@@ -138,10 +138,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 CORS_ALLOWED_ORIGINS = [
     "https://wikitubeio-backend-nsq354vwx-revathi-ks-projects.vercel.app",
-    "https://wikitubeio.vercel.app",
-    'http://localhost:3000',
     'http://127.0.0.1:3000',
-    "https://mcq-app-kohl.vercel.app/"
+    "https://mcq-app-kohl.vercel.app",
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = 'public/static/'
